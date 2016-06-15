@@ -1,5 +1,5 @@
 font_list: ["Tamsyn", "Siji"]
-background_img: "/home/amartya/Pictures/building.jpe"
+background_img: "/home/amartya/Pictures/building_night.jpe"
 font_size: 8
 inner_gap_size: 10
 outer_gap_size: 10     

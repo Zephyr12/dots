@@ -1,5 +1,6 @@
 bookmarks = [
 	["r/aww", "https://www.reddit.com/r/aww"],
+	["r/dnd", "https://www.reddit.com/r/dnd"],
 	["inbox", "https://inbox.google.com"],
 	["ocremix", "https://www.ocremix.org"],
 	["r/linux", "https://www.reddit.com/r/linux"],

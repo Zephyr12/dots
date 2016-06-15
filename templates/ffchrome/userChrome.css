@@ -27,7 +27,7 @@
     --tab-triangle: block;  /* block | none */
 
     /* URL VARIABLES */
-    --url-background: var(--bg-light); --url-color: var(--fg-dark);
+    --url-background: var(--bg-light); --url-color: var(--bg-dark);
     --url-height: 18px; --url-right-margin: 6px;
     --url-fonts: "Lemon",monospace,"Dejavu Sans"; --url-font-size: 7pt;
     --url-text-align: center; /* left | center | right */

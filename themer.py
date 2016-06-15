@@ -107,6 +107,9 @@ if __name__ == "__main__":
     for root, dirs, files in os.walk("."):
         for filename in files:
             path = os.path.join(root, filename)
+            print(path)
+            if not path.startswith("./template"):
+                continue
             dest_root = root.replace("template", "config")
             dest = path.replace("template", "config")
             try:

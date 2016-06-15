@@ -12,38 +12,38 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! special
-*.foreground:   #FBFCFE
-*.background:   #352D2A
-*.cursorColor:  #FBFCFE
+*.foreground:   #1F2022
+*.background:   #030200
+*.cursorColor:  #1F2022
 
 ! black
-*.color0:       #C50C99
-*.color8:       #C50C99
+*.color0:       #496199
+*.color8:       #496199
 
 ! red
-*.color1:       #C52199
-*.color9:       #C52199
+*.color1:       #00994C
+*.color9:       #00994C
 
 ! green
-*.color2:       #C7C799
-*.color10:      #C7C799
+*.color2:       #99FEFE
+*.color10:      #99FEFE
 
 ! yellow
-*.color3:       #994554
-*.color11:      #994554
+*.color3:       #990000
+*.color11:      #990000
 
 ! blue
-*.color4:       #994787
-*.color12:      #994787
+*.color4:       #991F09
+*.color12:      #991F09
 
 ! magenta
-*.color5:       #995941
-*.color13:      #995941
+*.color5:       #999900
+*.color13:      #999900
 
 ! cyan
-*.color6:       #99FE88
-*.color14:      #99FE88
+*.color6:       #99110B
+*.color14:      #99110B
 
 ! white
-*.color7:       #995445
-*.color15:      #995445
+*.color7:       #666666
+*.color15:      #666666
