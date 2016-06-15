@@ -1,0 +1,42 @@
+html{
+	width:100%;
+	color: {{fg}};
+	font-family: "Roboto Sans Light";
+	font-size: 16px;
+	background-color: {{bg}};
+}
+
+body{
+		margin-top: 10%;
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+input[type=text]{
+	background-color: {{bg}};
+	width: 100%;
+	font-size: 16px;
+	border: 1px solid {{red}};
+	border-radius: 1em;
+	padding: 1em;
+}
+
+a{
+		color:{{red}};
+		text-decoration: none;
+}      /* unvisited link */
+a:visited {color:{{red}};
+		text-decoration: none;
+}  /* visited link */
+a:hover {color:{{red}};
+		text-decoration: none;
+}  /* mouse over link */
+a:active {color:{{red}};
+		text-decoration: none;
+}  /* selected link */
+li{
+	list-style-type: none;
+	margin-bottom: 1em;
+	color: {{red}};
+}

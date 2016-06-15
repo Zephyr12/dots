@@ -1,0 +1,49 @@
+URxvt.internalBorder: 5
+URxvt.scrollBar: false
+URxvt.font: xft:Tamsyn:size=8
+URxvt.boldFont: xft:Tamsyn:size=8
+URxvt.letterSpace: 0
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+! special
+*.foreground:   #FBFCFE
+*.background:   #352D2A
+*.cursorColor:  #FBFCFE
+
+! black
+*.color0:       #C50C99
+*.color8:       #C50C99
+
+! red
+*.color1:       #C52199
+*.color9:       #C52199
+
+! green
+*.color2:       #C7C799
+*.color10:      #C7C799
+
+! yellow
+*.color3:       #994554
+*.color11:      #994554
+
+! blue
+*.color4:       #994787
+*.color12:      #994787
+
+! magenta
+*.color5:       #995941
+*.color13:      #995941
+
+! cyan
+*.color6:       #99FE88
+*.color14:      #99FE88
+
+! white
+*.color7:       #995445
+*.color15:      #995445

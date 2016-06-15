@@ -1,0 +1,50 @@
+URxvt.internalBorder: 5
+URxvt.scrollBar: false
+URxvt.font: xft:{{font_list[0]}}:size={{font_size}}
+URxvt.boldFont: xft:{{font_list[0]}}:size={{font_size}}
+URxvt.letterSpace: 0
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+! special
+*.foreground:   {{fg}}
+*.background:   {{bg}}
+*.cursorColor:  {{fg}}
+
+! black
+*.color0:       {{black}}
+*.color8:       {{black}}
+
+! red
+*.color1:       {{red}}
+*.color9:       {{red}}
+
+! green
+*.color2:       {{green}}
+*.color10:      {{green}}
+
+! yellow
+*.color3:       {{yellow}}
+*.color11:      {{yellow}}
+
+! blue
+*.color4:       {{blue}}
+*.color12:      {{blue}}
+
+! magenta
+*.color5:       {{magenta}}
+*.color13:      {{magenta}}
+
+! cyan
+*.color6:       {{cyan}}
+*.color14:      {{cyan}}
+
+! white
+*.color7:       {{white}}
+*.color15:      {{white}}
+
