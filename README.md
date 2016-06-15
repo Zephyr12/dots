@@ -1,6 +1,6 @@
 Dots - A happy little dotfiles repo
 ===================================
-![https://en.wikipedia.org/wiki/Bob_Ross#/media/File:Bob_at_Easel.jpg](Bob Ross)
+![Bob Ross](https://en.wikipedia.org/wiki/Bob_Ross#/media/File:Bob_at_Easel.jpg)
 
 
 Installation Instructions
