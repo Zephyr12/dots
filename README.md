@@ -6,5 +6,6 @@ Dots - A happy little dotfiles repo
 Installation Instructions
 =========================
 - git clone
-- pick an image for your background
+- pick an image for your background and set the yaml file
+- run make to fill the config directory
 - symlink all of the directories where you need them
