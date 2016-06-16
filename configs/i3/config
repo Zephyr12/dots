@@ -231,10 +231,10 @@ bar {
     focused_workspace #994787 #994787 #FBFCFE
     active_workspace #994787 #994787 #352D2A
     inactive_workspace #352D2A #352D2A #FBFCFE
-    urgent_workspace #C7C799 #C7C799 #FBFCFE
+    urgent_workspace #C52199 #C52199 #FBFCFE
   }
 }
 client.focused #352D2A #352D2A #FBFCFE #352D2A
 client.focused_inactive #352D2A #352D2A #FBFCFE #352D2A
 client.unfocused #352D2A #352D2A #994787 #352D2A
-client.urgent #C7C799 #C7C799 #FBFCFE #C7C799
+client.urgent #C52199 #C52199 #FBFCFE #C52199

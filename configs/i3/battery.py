@@ -31,7 +31,7 @@ def getBatteryStatus():
         else:
             print(""+perc)
             print("")
-            print("#C7C799")  # yellow
+            print("#C52199")  # yellow
 
     else:  # Full
         print("full")

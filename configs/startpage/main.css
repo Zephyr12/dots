@@ -17,26 +17,26 @@ input[type=text]{
 	background-color: #352D2A;
 	width: 100%;
 	font-size: 16px;
-	border: 1px solid #C7C799;
+	border: 1px solid #C52199;
 	border-radius: 1em;
 	padding: 1em;
 }
 
 a{
-		color:#C7C799;
+		color:#C52199;
 		text-decoration: none;
 }      /* unvisited link */
-a:visited {color:#C7C799;
+a:visited {color:#C52199;
 		text-decoration: none;
 }  /* visited link */
-a:hover {color:#C7C799;
+a:hover {color:#C52199;
 		text-decoration: none;
 }  /* mouse over link */
-a:active {color:#C7C799;
+a:active {color:#C52199;
 		text-decoration: none;
 }  /* selected link */
 li{
 	list-style-type: none;
 	margin-bottom: 1em;
-	color: #C7C799;
+	color: #C52199;
 }
