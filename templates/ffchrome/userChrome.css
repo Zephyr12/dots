@@ -22,7 +22,7 @@
     --fg-light: {{fg}}; --fg-dark: {{red}};
     --tab-triangle-correction: -1px;
     --tab-height: 18px; --tab-icon-size: 12px; --tab-strip-margin: -12px; --tab-overlap: -5px;
-    --tab-fonts: "Lemon",monospace,"Dejavu Sans"; --tab-font-size: 7pt;
+    --tab-fonts: "Tamsyn", "Lemon",monospace,"Dejavu Sans"; --tab-font-size: 10pt;
     --tab-text-align: center; /* left | center | right */
     --tab-triangle: block;  /* block | none */
 

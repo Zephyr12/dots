@@ -2,39 +2,35 @@
 # zathurarc-dark
 
 set font                        "{{font_list[0]}} {{font_size}}"
-set default-bg                  "#151515" #00
-set default-fg                  "#e0e0e0" #01
+set default-bg                  "{{bg}}" #00
+set default-fg                  "{{fg}}" #01
 
-set statusbar-fg                "#B0B0B0" #04
-set statusbar-bg                "#202020" #01
+set statusbar-fg                "{{fg}}" #04
+set statusbar-bg                "{{red}}" #01
 
-set inputbar-bg                 "#151515" #00 currently not used
-set inputbar-fg                 "#e0e0e0" #02
+set inputbar-bg                 "{{bg}}" #00 currently not used
+set inputbar-fg                 "{{fg}}" #02
 
-set notification-error-bg       "#AC4142" #08
-set notification-error-fg       "#151515" #00
+set notification-error-bg       "{{bg}}" #08
+set notification-error-fg       "{{red}}" #00
 
-set notification-warning-bg     "#AC4142" #08
-set notification-warning-fg     "#151515" #00
+set notification-warning-bg     "{{bg}}" #08
+set notification-warning-fg     "{{yellow}}" #00
 
-set highlight-color             "#F4BF75" #0A
-set highlight-active-color      "#6A9FB5" #0D
+set highlight-color             "{{blue}}" #0A
+set highlight-active-color      "{{green}}" #0D
 
-set completion-highlight-fg     "#303030" #02
-set completion-highlight-bg     "#75B5AA" #0C
+set completion-highlight-fg     "{{bg}}" #02
+set completion-highlight-bg     "{{green}}" #0C
 
-set completion-bg               "#303030" #02
-set completion-fg               "#75B5AA" #0C
+set completion-bg               "{{bg}}" #02
+set completion-fg               "{{red}}" #0C
 
-set notification-bg             "#90A959" #0B
-set notification-fg             "#151515" #00
+set notification-bg             "{{yellow}}" #0B
+set notification-fg             "{{bg}}" #00
 
-set recolor-lightcolor          "#151515" #00
-set recolor-darkcolor           "#E0E0E0" #06
-set recolor                     "true"
+set recolor-darkcolor 			"{{fg}}"
+set recolor-lightcolor 			"{{bg}}"
 
-# setting recolor-keep true will keep any color your pdf has.
-# if it is false, it'll just be black and white
-set recolor-keephue             "true"
-
-# Rest of your configs go here:
+set recolor 					"true"
+set recolor-keephue 			"false"

@@ -15,6 +15,7 @@ body{
 
 input[type=text]{
 	background-color: {{bg}};
+	color: {{fg}};
 	width: 100%;
 	font-size: 16px;
 	border: 1px solid {{red}};

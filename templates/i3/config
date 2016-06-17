@@ -238,3 +238,7 @@ client.focused {{bg}} {{bg}} {{fg}} {{bg}}
 client.focused_inactive {{bg}} {{bg}} {{fg}} {{bg}}
 client.unfocused {{bg}} {{bg}} {{blue}} {{bg}}
 client.urgent {{red}} {{red}} {{fg}} {{red}}
+
+exec slock
+exec mpc stop # stops any embarrassing moments with MPD auto starting
+

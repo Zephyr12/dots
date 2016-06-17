@@ -74,17 +74,10 @@ function refine(a){
 	search = document.getElementById(a).value;
 	results = []
 	if (search.length > 0){
-		if (search[0] == "!"){
-			results = [["search the net", "https://www.duckduckgo.com/"]]
-		}
-		else{
-			results = bookmarks.sort(function(a, b){
-				return rankSearch(search, b[0]) - rankSearch(search, a[0]);
-			});
-		}
-		document.getElementById("form").action = results[0][1];
-	}else{
-		document.getElementById("form").action = "https://www.duckduckgo.com";
+		results = bookmarks.sort(function(a, b){
+			return rankSearch(search, b[0]) - rankSearch(search, a[0]);
+		});
 	}
+	document.getElementById("form").action = "https://www.duckduckgo.com";
 	displayResults(results.slice(0,7));
 }
