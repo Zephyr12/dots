@@ -9,33 +9,33 @@ def getBatteryStatus():
         perc = tokens[3][:-1]
         percInt = int(perc[:-1])
         if (chargestate[0] == "C"):
-            print(""+perc)
-            print("")
-            print("#9987EB")
+            print(""+perc)
+            print("")
+            print("#578399")
         if(percInt > 90):
-            print("" + perc)
-            print("")
-            print("#9987EB")
+            print(" " + perc)
+            print("")
+            print("#578399")
         if(percInt > 75):
-            print("" + perc)
-            print("")
-            print("#9987EB")  # green
+            print("" + perc)
+            print("")
+            print("#578399")  # green
         elif(percInt > 50):
-            print("" + perc)
-            print("")
-            print("#994163")  # yellow
+            print("" + perc)
+            print("")
+            print("#45998B")  # yellow
         elif(percInt > 25):
-            print("" + perc)
-            print("")
-            print("#994163")  # yellow
+            print("" + perc)
+            print("")
+            print("#45998B")  # yellow
         else:
-            print(""+perc)
-            print("")
-            print("#C5996A")  # yellow
+            print(""+perc)
+            print("")
+            print("#99935B")  # yellow
 
     else:  # Full
         print("full")
         print("")
-        print("#9987EB")
+        print("#578399")
 
 getBatteryStatus()

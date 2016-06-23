@@ -1,7 +1,7 @@
 import subprocess
 
 def getVolumeBraille(vols):
-    return ":"
+    return " "
 def getVolumeSettings():
     volumePercentages = [int(100*(int(i)/65536)) for i in str(subprocess.check_output('amixer cget numid=3 | grep ": values="', shell=True)).split('=')[1][:-3].split(",")]
     vol_chara = getVolumeBraille(volumePercentages)

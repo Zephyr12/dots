@@ -1,8 +1,8 @@
 URxvt.internalBorder: 5
 URxvt.scrollBar: false
-URxvt.font: xft:Tamsyn:size=8
-URxvt.boldFont: xft:Tamsyn:size=8
-URxvt.letterSpace: 0
+URxvt.font: xft:Roboto Mono Light for Powerline:size=8
+URxvt.boldFont: xft:Roboto Mono Light for Powerline:size=8
+URxvt.letterSpace: -1
 Xft.antialias: 1
 Xft.autohint: 0
 Xft.dpi: 96
@@ -12,38 +12,38 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! special
-*.foreground:   #FBFEFE
-*.background:   #372C32
-*.cursorColor:  #FBFEFE
+*.foreground:   #DED9B8
+*.background:   #121A2A
+*.cursorColor:  #DED9B8
 
 ! black
-*.color0:       #C59999
-*.color8:       #C59999
+*.color0:       #99805B
+*.color8:       #99805B
 
 ! red
-*.color1:       #C5996A
-*.color9:       #C5996A
+*.color1:       #99935B
+*.color9:       #99935B
 
 ! green
-*.color2:       #9987EB
-*.color10:      #9987EB
+*.color2:       #578399
+*.color10:      #578399
 
 ! yellow
-*.color3:       #994163
-*.color11:      #994163
+*.color3:       #45998B
+*.color11:      #45998B
 
 ! blue
-*.color4:       #C72F99
-*.color12:      #C72F99
+*.color4:       #5B9971
+*.color12:      #5B9971
 
 ! magenta
-*.color5:       #99457E
-*.color13:      #99457E
+*.color5:       #5B5599
+*.color13:      #5B5599
 
 ! cyan
-*.color6:       #9987BF
-*.color14:      #9987BF
+*.color6:       #566A99
+*.color14:      #566A99
 
 ! white
-*.color7:       #994071
-*.color15:      #994071
+*.color7:       #599299
+*.color15:      #599299

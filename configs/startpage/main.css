@@ -1,9 +1,9 @@
 html{
 	width:100%;
-	color: #FBFEFE;
+	color: #DED9B8;
 	font-family: "Roboto Sans Light";
 	font-size: 16px;
-	background-color: #372C32;
+	background-color: #121A2A;
 }
 
 body{
@@ -14,30 +14,30 @@ body{
 }
 
 input[type=text]{
-	background-color: #372C32;
-	color: #FBFEFE;
+	background-color: #121A2A;
+	color: #DED9B8;
 	width: 100%;
 	font-size: 16px;
-	border: 1px solid #C5996A;
+	border: 1px solid #5B9971;
 	border-radius: 1em;
 	padding: 1em;
 }
 
 a{
-		color:#C5996A;
+		color:#5B9971;
 		text-decoration: none;
 }      /* unvisited link */
-a:visited {color:#C5996A;
+a:visited {color:#5B9971;
 		text-decoration: none;
 }  /* visited link */
-a:hover {color:#C5996A;
+a:hover {color:#5B9971;
 		text-decoration: none;
 }  /* mouse over link */
-a:active {color:#C5996A;
+a:active {color:#5B9971;
 		text-decoration: none;
 }  /* selected link */
 li{
 	list-style-type: none;
 	margin-bottom: 1em;
-	color: #C5996A;
+	color: #5B9971;
 }

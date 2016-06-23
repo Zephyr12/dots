@@ -1,36 +1,36 @@
 
 # zathurarc-dark
 
-set font                        "Tamsyn 8"
-set default-bg                  "#372C32" #00
-set default-fg                  "#FBFEFE" #01
+set font                        "Roboto Mono Light for Powerline 8"
+set default-bg                  "#121A2A" #00
+set default-fg                  "#DED9B8" #01
 
-set statusbar-fg                "#FBFEFE" #04
-set statusbar-bg                "#C5996A" #01
+set statusbar-fg                "#DED9B8" #04
+set statusbar-bg                "#99935B" #01
 
-set inputbar-bg                 "#372C32" #00 currently not used
-set inputbar-fg                 "#FBFEFE" #02
+set inputbar-bg                 "#121A2A" #00 currently not used
+set inputbar-fg                 "#DED9B8" #02
 
-set notification-error-bg       "#372C32" #08
-set notification-error-fg       "#C5996A" #00
+set notification-error-bg       "#121A2A" #08
+set notification-error-fg       "#99935B" #00
 
-set notification-warning-bg     "#372C32" #08
-set notification-warning-fg     "#994163" #00
+set notification-warning-bg     "#121A2A" #08
+set notification-warning-fg     "#45998B" #00
 
-set highlight-color             "#C72F99" #0A
-set highlight-active-color      "#9987EB" #0D
+set highlight-color             "#5B9971" #0A
+set highlight-active-color      "#578399" #0D
 
-set completion-highlight-fg     "#372C32" #02
-set completion-highlight-bg     "#9987EB" #0C
+set completion-highlight-fg     "#121A2A" #02
+set completion-highlight-bg     "#578399" #0C
 
-set completion-bg               "#372C32" #02
-set completion-fg               "#C5996A" #0C
+set completion-bg               "#121A2A" #02
+set completion-fg               "#99935B" #0C
 
-set notification-bg             "#994163" #0B
-set notification-fg             "#372C32" #00
+set notification-bg             "#45998B" #0B
+set notification-fg             "#121A2A" #00
 
-set recolor-darkcolor 			"#FBFEFE"
-set recolor-lightcolor 			"#372C32"
+set recolor-darkcolor 			"#DED9B8"
+set recolor-lightcolor 			"#121A2A"
 
 set recolor 					"true"
 set recolor-keephue 			"false"

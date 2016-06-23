@@ -16,9 +16,9 @@ interval=5
 command=/home/amartya/.i3/disk_usage.sh
 interval=once
 min_width=button=1
-label=:
+label= 
 
 [datetime]
-label=:
+label= 
 command=date "+%d-%m %H:%M"
 interval=15
