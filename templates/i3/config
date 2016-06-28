@@ -237,8 +237,8 @@ bar {
     urgent_workspace {{red}} {{red}} {{fg}}
   }
 }
-client.focused {{bg}} {{bg}} {{fg}} {{bg}}
-client.focused_inactive {{bg}} {{bg}} {{fg}} {{bg}}
+client.focused {{bg}} {{blue}} {{fg}} {{bg}}
+client.focused_inactive {{red}} {{bg}} {{fg}} {{bg}}
 client.unfocused {{bg}} {{bg}} {{blue}} {{bg}}
 client.urgent {{red}} {{red}} {{fg}} {{red}}
 

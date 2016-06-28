@@ -34,8 +34,8 @@ def getBatteryStatus():
             print("{{red}}")  # yellow
 
     else:  # Full
-        print("full")
-        print("")
+        print(" full")
+        print("")
         print("{{green}}")
 
 getBatteryStatus()
