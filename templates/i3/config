@@ -44,7 +44,7 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
-bindsym $mod+m exec "mpc play $(mpc playlist -f '[%title%]|[%file%]' | awk '{print ((NR-1))+1, $0    }' | dmenu -nb '{{bg}}' -nf '{{blue}}' -sb '{{blue}}' -p 'play' -fn '{{font_list[0]}}:size={{font_size}}' -i -h 20 -w 300 -y $height -l 20 | sed -e 's/^\([0-9]\+\).*/\1/')"
+bindsym $mod+m exec "mpc play $(mpc playlist -f '[%title%]|[%file%]' | awk '{print ((NR-1))+1, $0    }' | dmenu -nb '{{bg}}' -nf '{{red}}' -sb '{{red}}' -sf '{{bg}}' -p 'play' -fn '{{font_list[0]}}:size={{font_size}}' -i -h 20 -w 300 -y $height -l 20 | sed -e 's/^\([0-9]\+\).*/\1/')"
 ###keybinds
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -66,7 +66,7 @@ bindsym $mod+Shift+c exec "firefox -P Apps 'www.google.com/calendar'"
 ###visual tweaks
 exec_always compton --backend=glx
 
-new_window pixel 3
+new_window pixel 1
 gaps inner {{inner_gap_size}}
 gaps outer {{outer_gap_size}}
 ###
@@ -79,7 +79,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 
-bindsym $mod+d exec zsh -c "dmenu_run -nb '{{bg}}' -nf '{{blue}}' -sb '{{blue}}' -fn '{{font_list[0]}}:size={{font_size}}' -h 20 -w 300 -y $height -p 'run' -l 20"
+bindsym $mod+d exec zsh -c "dmenu_run -nb '{{bg}}' -nf '{{red}}' -sb '{{red}}' -sf '{{bg}}' -fn '{{font_list[0]}}:size={{font_size}}' -h 20 -w 300 -y $height -p 'run' -l 20"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -225,22 +225,22 @@ bar {
   i3bar_command i3bar -t
   status_command i3blocks -v -c ~/.i3/i3-blocks-status
   strip_workspace_numbers yes
-  position top
+  position {{bar_position}}
   height $height
   colors {
     separator {{bg}}
     background {{bg}}
     statusline {{fg}}
-    focused_workspace {{blue}} {{blue}} {{fg}}
-    active_workspace {{blue}} {{blue}} {{bg}}
-    inactive_workspace {{bg}} {{bg}} {{fg}}
-    urgent_workspace {{red}} {{red}} {{fg}}
+    focused_workspace {{bg}} {{bg}} {{fg}}
+    active_workspace {{red}} {{red}} {{bg}}
+    inactive_workspace {{bg}} {{bg}} {{red}}
+    urgent_workspace {{blue}} {{blue}} {{fg}}
   }
 }
-client.focused {{bg}} {{blue}} {{fg}} {{bg}}
-client.focused_inactive {{red}} {{bg}} {{fg}} {{bg}}
-client.unfocused {{bg}} {{bg}} {{blue}} {{bg}}
-client.urgent {{red}} {{red}} {{fg}} {{red}}
+client.focused {{bg}} {{red}} {{fg}} {{bg}}
+client.focused_inactive {{blue}} {{bg}} {{fg}} {{bg}}
+client.unfocused {{bg}} {{bg}} {{red}} {{bg}}
+client.urgent {{blue}} {{blue}} {{fg}} {{blue}}
 
 exec slock
 exec mpc stop # stops any embarrassing moments with MPD auto starting

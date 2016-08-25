@@ -14,20 +14,22 @@ from PIL import Image
 
 def clamp_value(col, low, high):
     hsv = list(colorsys.rgb_to_hsv(*col))
-    new_value = max(min(hsv[2], high), low)
-    hsv[2] = max(min(hsv[2], high), low)
-    col = tuple(int(255*i) for i in colorsys.hsv_to_rgb(*hsv))
-    return col
+    hsv[2] = sorted((low, hsv[2], high))[1]
+    return colorsys.hsv_to_rgb(*hsv)
+
 
 def clamp_sat(col, low, high):
     hsv = list(colorsys.rgb_to_hsv(*col))
-    new_value = max(min(hsv[1], high), low)
-    hsv[1] = max(min(hsv[1], high), low)
-    col = tuple(int(i) for i in colorsys.hsv_to_rgb(*hsv))
-    return col
+    hsv[1] = sorted((low, hsv[1], high))[1]
+    return colorsys.hsv_to_rgb(*hsv)
+
 
 def tohex(r, g, b):
     hexchars = "0123456789ABCDEF"
+    r = int(r*255)
+    g = int(g*255)
+    b = int(b*255)
+
     return ("#"
             + hexchars[r // 16]
             + hexchars[r % 16]
@@ -61,56 +63,71 @@ def deduplicate(cols, delta=10):
     return [col for col, count in sorted([(col, count) for col, count in  results.items()], key=lambda x: x[1])][::-1]
 
 
-def average(a, b):
-    return (int((a[0] + b[0])*0.5), int((a[1] + b[1])*0.5), int((a[2] + b[2])*0.5))
+def delta_hue(a, b):
+    hsv_a = colorsys.rgb_to_hsv(*a)
+    hsv_b = colorsys.rgb_to_hsv(*b)
+    return abs(hsv_a[0] - hsv_b[0])
 
-def hue_shift(col, to, by):
-    hsv_col = colorsys.rgb_to_hsv(*col)
+
+def average(a, b):
+    return ((a[0] + b[0])*0.5, (a[1] + b[1])*0.5, (a[2] + b[2])*0.5)
+
+
+def clamp_hue(col, to, by):
+    hsv_col = list(colorsys.rgb_to_hsv(*col))
     hsv_to = colorsys.rgb_to_hsv(*to)
-    return colorsys.hsv_to_rgb(
-        hsv_col[0]*(1-by) + hsv_to[0]*(by),
-        hsv_col[1],
-        hsv_col[2])
+    hsv_col[0] = sorted((hsv_to[0] - by, hsv_col[0], hsv_to[0] + by))[1]
+    return colorsys.hsv_to_rgb(*hsv_col)
+
 
 def contrast(a, b):
-    return math.sqrt((a[0] - b[0])**2 + (a[1] - b[1])**2 + (a[2] - b[2])**2)
+    return abs(a[0] - b[0]) + abs(a[1] - b[1]) + abs(a[2] - b[2])
+
 
 def negate(a):
-    return (255 - a[0], 255 - a[1], 255 - a[2])
+    return (1 - a[0], 1 - a[1], 1 - a[2])
 
 canonical_colors = [
     ("black", (0, 0, 0)),
-    ("red", (255, 0, 0)),
-    ("green", (0, 255, 0)),
-    ("blue", (0, 0, 255)),
-    ("cyan", (0, 255, 255)),
-    ("magenta", (255, 0, 255)),
-    ("yellow", (255, 255, 0)),
-    ("white", (255, 255, 255))
+    ("red", (1.0, 0, 0)),
+    ("green", (0, 1.0, 0)),
+    ("blue", (0, 0, 1.0)),
+    ("cyan", (0, 1.0, 1.0)),
+    ("magenta", (1.0, 0, 1.0)),
+    ("yellow", (1.0, 1.0, 0)),
+    ("white", (1.0, 1.0, 1.0))
 ]
 
 if __name__ == "__main__":
     context = yaml.safe_load(open("generic_settings.yaml"))
-    colors = [col[1] for col in get_n_colors(context["background_img"], 75)]
-    colors = deduplicate(colors)
+    colors = [col[1] for col in get_n_colors(context["background_img"], 255)]
+    colors = [(r/255, g/255, b/255) for r,g,b in colors]
+    colors = deduplicate(colors, delta=10)
+    print(colors)
     bg = colors[0]
     context["bg"] = tohex(*bg)
     fg =  sorted(colors, key=lambda col: contrast(col, bg))[-1]
-    if contrast(fg, bg)< 30:
+    if contrast(fg, bg) < 0.3:
         fg = negate(fg)
     context["fg"] = tohex(*fg)
-    
-    for name, key in canonical_colors:
-        col = sorted(colors, key=lambda col: contrast(col, key))[-1]
+
+    for name, target in canonical_colors:
+        print ("\n\n")
+        cols = sorted(colors, key=lambda col: delta_hue(col, target))
+        print(tohex(*target))
+        print()
+        for candidate in cols:
+            print(tohex(*candidate))
+        col = cols[0]
         colors.remove(col)
-        col = clamp_value(clamp_sat(hue_shift(col, key, 0.3), 0.4, 0.8), 0.4, 0.6)
+        col = clamp_value(clamp_sat(col, 0.4, 0.6), 0.4, 0.6)
+
         context[name] = tohex(*col)
 
     all_paths = os
     for root, dirs, files in os.walk("."):
         for filename in files:
             path = os.path.join(root, filename)
-            print(path)
             if not path.startswith("./template"):
                 continue
             dest_root = root.replace("template", "config")

@@ -1,5 +1,6 @@
 font_list: ["Roboto Mono Light for Powerline", "FontAwesome"]
-background_img: "/home/amartya/Pictures/Walls2LOR/03578_spiral_3840x2160.jpg"
+zsh:1: command not found: :wq
 font_size: 8
-inner_gap_size: 10
-outer_gap_size: 20     
+bar_position: "bottom"
+inner_gap_size: 20
+outer_gap_size: 10

@@ -1,8 +1,9 @@
-URxvt.internalBorder: 5
+URxvt.internalBorder: {{inner_gap_size}}
 URxvt.scrollBar: false
 URxvt.font: xft:{{font_list[0]}}:size={{font_size}}
 URxvt.boldFont: xft:{{font_list[0]}}:size={{font_size}}
 URxvt.letterSpace: -1
+URxvt*buffered: false
 Xft.antialias: 1
 Xft.autohint: 0
 Xft.dpi: 96

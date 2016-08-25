@@ -1,5 +1,5 @@
 theme:
 	rm configs -r
 	./themer.py
-	xrdb -all ~/.Xresources
+	xrdb -all ~/.dots/configs/Xresources
 	i3-msg restart

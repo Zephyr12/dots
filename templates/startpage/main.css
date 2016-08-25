@@ -18,26 +18,26 @@ input[type=text]{
 	color: {{fg}};
 	width: 100%;
 	font-size: 16px;
-	border: 1px solid {{blue}};
+	border: 1px solid {{red}};
 	border-radius: 1em;
 	padding: 1em;
 }
 
 a{
-		color:{{blue}};
+		color:{{red}};
 		text-decoration: none;
 }      /* unvisited link */
-a:visited {color:{{blue}};
+a:visited {color:{{red}};
 		text-decoration: none;
 }  /* visited link */
-a:hover {color:{{blue}};
+a:hover {color:{{red}};
 		text-decoration: none;
 }  /* mouse over link */
-a:active {color:{{blue}};
+a:active {color:{{red}};
 		text-decoration: none;
 }  /* selected link */
 li{
 	list-style-type: none;
 	margin-bottom: 1em;
-	color: {{blue}};
+	color: {{red}};
 }
