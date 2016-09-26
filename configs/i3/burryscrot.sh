@@ -7,4 +7,3 @@ i3lock -i ~/.i3/lockimg.png -u -e
 rm ~/.i3/lockimg.png
 
 
-

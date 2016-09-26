@@ -1,0 +1,36 @@
+
+# zathurarc-dark
+
+set font                        "Fira Code 8"
+set default-bg                  "#121512" #00
+set default-fg                  "#BFBCD0" #01
+
+set statusbar-fg                "#BFBCD0" #04
+set statusbar-bg                "#663939" #01
+
+set inputbar-bg                 "#121512" #00 currently not used
+set inputbar-fg                 "#BFBCD0" #02
+
+set notification-error-bg       "#121512" #08
+set notification-error-fg       "#663939" #00
+
+set notification-warning-bg     "#121512" #08
+set notification-warning-fg     "#666651" #00
+
+set highlight-color             "#515166" #0A
+set highlight-active-color      "#516651" #0D
+
+set completion-highlight-fg     "#121512" #02
+set completion-highlight-bg     "#516651" #0C
+
+set completion-bg               "#121512" #02
+set completion-fg               "#663939" #0C
+
+set notification-bg             "#666651" #0B
+set notification-fg             "#121512" #00
+
+set recolor-darkcolor 			"#BFBCD0"
+set recolor-lightcolor 			"#121512"
+
+set recolor 					"true"
+set recolor-keephue 			"false"

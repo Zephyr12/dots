@@ -1,0 +1,24 @@
+[music]
+command=python ~/.i3/music.py
+interval=once
+signal=1
+
+[volume]
+command=python /home/amartya/.i3/volume.py
+interval=once
+signal=2
+
+[battery]
+command=python /home/amartya/.i3/battery.py
+interval=5
+
+[disk]
+command=/home/amartya/.i3/disk_usage.sh
+interval=once
+min_width=button=1
+label= 
+
+[datetime]
+label= 
+command=date "+%d-%m %H:%M"
+interval=15

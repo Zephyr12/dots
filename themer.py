@@ -120,7 +120,7 @@ if __name__ == "__main__":
             print(tohex(*candidate))
         col = cols[0]
         colors.remove(col)
-        col = clamp_value(clamp_sat(col, 0.4, 0.6), 0.4, 0.6)
+        col = clamp_value(clamp_sat(col, 0.2, 0.8), 0.4, 0.7)
 
         context[name] = tohex(*col)
 

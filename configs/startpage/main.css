@@ -1,0 +1,43 @@
+html{
+	width:100%;
+	color: #BFBCD0;
+	font-family: "Roboto Sans Light";
+	font-size: 16px;
+	background-color: #121512;
+}
+
+body{
+		margin-top: 10%;
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+input[type=text]{
+	background-color: #121512;
+	color: #BFBCD0;
+	width: 100%;
+	font-size: 16px;
+	border: 1px solid #663939;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+a{
+		color:#663939;
+		text-decoration: none;
+}      /* unvisited link */
+a:visited {color:#663939;
+		text-decoration: none;
+}  /* visited link */
+a:hover {color:#663939;
+		text-decoration: none;
+}  /* mouse over link */
+a:active {color:#663939;
+		text-decoration: none;
+}  /* selected link */
+li{
+	list-style-type: none;
+	margin-bottom: 1em;
+	color: #663939;
+}
