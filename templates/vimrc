@@ -1,0 +1,96 @@
+"basic editing tools
+let mapleader=","
+set number
+set spell
+set spelllang:en
+set wildmenu
+syntax on
+set foldmethod=indent
+set foldnestmax=99
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+" TODO: Understand vundle
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/TaskList.vim'
+Plugin 'kchmck/vim-coffee-script'
+" Plugin 'scrooloose/syntastic'
+Plugin 'fatih/vim-go'
+Plugin 'the-lambda-church/merlin'
+Plugin 'rust-lang/rust.vim'
+Plugin 'jcf/vim-latex'
+Plugin 'ajh17/VimCompletesMe'
+" Plugin 'Valloric/YouCompleteMe'
+call vundle#end()            " required
+filetype plugin indent on    " required
+set omnifunc=syntaxcomplete#Complete
+
+hi T1 ctermfg=1 ctermbg=NONE
+hi T2 ctermfg=2 ctermbg=NONE
+hi T3 ctermfg=3 ctermbg=NONE
+hi T4 ctermfg=4 ctermbg=NONE
+hi T5 ctermfg=5 ctermbg=NONE
+hi T6 ctermfg=6 ctermbg=NONE
+hi T7 ctermfg=7 ctermbg=NONE
+hi T8 ctermfg=8 ctermbg=NONE
+hi T9 ctermfg=9 ctermbg=NONE
+hi T10 ctermfg=10 ctermbg=NONE
+hi T11 ctermfg=11 ctermbg=NONE
+hi T12 ctermfg=12 ctermbg=NONE
+hi T13 ctermfg=13 ctermbg=NONE
+hi T14 ctermfg=14 ctermbg=NONE
+hi T15 ctermfg=15 ctermbg=NONE
+
+
+
+nmap <leader>tl :TaskList<CR>
+nmap <F7> :TagbarToggle<CR>
+nmap <leader>sc :SyntasticCheck<CR>
+vmap <leader>gf :'<,'>!autopep8 - <CR>
+
+nmap <leader>e :tabedit 
+nmap <Tab> :tabnext<CR>
+nmap <S-Tab> :tabprev<CR>
+nmap <leader>ff :'<,'>s/\(.\{-}\):\(.\{-}\):\(.*\)/<p><label>\3: <input type="\2" placeholder="\3" name="\1"\/><\/label><\/p><CR>
+
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+set statusline+=%#T5#\ %{GitStatus()}%#T8#\ \|
+set statusline+=%#T2#\ %t%#T8#
+set statusline+=%#T3#%m%#T8#\ \|
+set statusline+=%#T4#\ %n%#T8#
+set statusline+=%#T4#\ %=%#T8#
+set statusline+=%#T3#\ %l%#T1#/%L
+
+function! GitStatus()
+	return ""
+	let status = substitute(system("git branch --no-color | sed -n '/^*/s/..\\(.*\\)/\\1/p'"), ".$", "","")
+	if status =~ "^fatal"
+		return ' none'
+	else
+		return ' ' . status
+
+
+endfunction
+
+
+set laststatus=2
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_ocaml_checkers = ['merlin']
+let g:ycm_rust_src_path = '/opt/rust/src'
+
+set tabstop=4
+set shiftwidth=4
+let g:ycm_confirm_extra_conf = 0
+
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl,*.fs,*.vs setf glsl
+
+set hidden
+highlight Pmenu ctermfg=1 ctermbg=NONE
+highlight PmenuSel ctermfg=NONE ctermbg=1
