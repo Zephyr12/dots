@@ -11,31 +11,31 @@ def getBatteryStatus():
         if (chargestate[0] == "C"):
             print(""+perc)
             print("")
-            print("#516651")
+            print("#226644")
         if(percInt > 90):
             print(" " + perc)
             print("")
-            print("#516651")
+            print("#226644")
         if(percInt > 75):
             print("" + perc)
             print("")
-            print("#516651")  # green
+            print("#226644")  # green
         elif(percInt > 50):
             print("" + perc)
             print("")
-            print("#666651")  # yellow
+            print("#666614")  # yellow
         elif(percInt > 25):
             print("" + perc)
             print("")
-            print("#666651")  # yellow
+            print("#666614")  # yellow
         else:
             print(""+perc)
             print("")
-            print("#663939")  # yellow
+            print("#665151")  # yellow
 
     else:  # Full
         print(" full")
         print("")
-        print("#516651")
+        print("#226644")
 
 getBatteryStatus()

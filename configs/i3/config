@@ -30,7 +30,7 @@ floating_modifier $mod
 ### My user tweaks
 
 ###autostarts
-exec_always feh /home/amartya/Pictures/Walls2LOR/03578_spiral_3840x2160.jpg --bg-scale
+exec_always feh /home/amartya/Pictures/night_horizon.jpe --bg-scale
 exec mpd
 exec pulseaudio
 exec ~/.i3/music_updater.sh
@@ -44,7 +44,7 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
-bindsym $mod+m exec "mpc play $(mpc playlist -f '[%title%]|[%file%]' | awk '{print ((NR-1))+1, $0    }' | dmenu -nb '#121512' -nf '#663939' -sb '#663939' -sf '#121512' -p 'play' -fn 'Fira Code:size=8' -i -h 20 -w 300 -y $height -l 20 | sed -e 's/^\([0-9]\+\).*/\1/')"
+bindsym $mod+m exec "mpc play $(mpc playlist -f '[%title%]|[%file%]' | awk '{print ((NR-1))+1, $0    }' | dmenu -nb '#010101' -nf '#665151' -sb '#665151' -sf '#010101' -p 'play' -fn 'Fira Code:size=8' -i -h 20 -w 300 -y $height -l 20 | sed -e 's/^\([0-9]\+\).*/\1/')"
 ###keybinds
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -79,7 +79,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 
-bindsym $mod+d exec zsh -c "dmenu_run -nb '#121512' -nf '#663939' -sb '#663939' -sf '#121512' -fn 'Fira Code:size=8' -h 20 -w 300 -y $height -p 'run' -l 20"
+bindsym $mod+d exec zsh -c "dmenu_run -nb '#010101' -nf '#665151' -sb '#665151' -sf '#010101' -fn 'Fira Code:size=8' -h 20 -w 300 -y $height -p 'run' -l 20"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -216,7 +216,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#exec_always lemonblocks ~/.i3/lemonblocks_scripts/top_bar.yaml | lemonbar -F#BFBCD0 -B#121512 -g1200x20+20+20 -d -f"Source Code Pro:size=8" -f"Font Awesome:size=9" | sh
+#exec_always lemonblocks ~/.i3/lemonblocks_scripts/top_bar.yaml | lemonbar -F#C8A37B -B#010101 -g1200x20+20+20 -d -f"Source Code Pro:size=8" -f"Font Awesome:size=9" | sh
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -228,19 +228,19 @@ bar {
   position bottom
   height $height
   colors {
-    separator #121512
-    background #121512
-    statusline #BFBCD0
-    focused_workspace #121512 #121512 #BFBCD0
-    active_workspace #663939 #663939 #121512
-    inactive_workspace #121512 #121512 #663939
-    urgent_workspace #515166 #515166 #BFBCD0
+    separator #010101
+    background #010101
+    statusline #C8A37B
+    focused_workspace #010101 #010101 #C8A37B
+    active_workspace #665151 #665151 #010101
+    inactive_workspace #010101 #010101 #665151
+    urgent_workspace #363666 #363666 #C8A37B
   }
 }
-client.focused #121512 #663939 #BFBCD0 #121512
-client.focused_inactive #515166 #121512 #BFBCD0 #121512
-client.unfocused #121512 #121512 #663939 #121512
-client.urgent #515166 #515166 #BFBCD0 #515166
+client.focused #010101 #665151 #C8A37B #010101
+client.focused_inactive #363666 #010101 #C8A37B #010101
+client.unfocused #010101 #010101 #665151 #010101
+client.urgent #363666 #363666 #C8A37B #363666
 
 exec slock
 exec mpc stop # stops any embarrassing moments with MPD auto starting
