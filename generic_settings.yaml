@@ -1,6 +1,6 @@
 font_list: ["Fira Code", "FontAwesome"]
-background_img: "/home/amartya/Pictures/Walls2LOR/03578_spiral_3840x2160.jpg"
+background_img: "/home/amartya/Pictures/wallpaper.jpe"
 font_size: 8
-bar_position: "bottom"
+bar_position: "top"
 inner_gap_size: 20
 outer_gap_size: 10

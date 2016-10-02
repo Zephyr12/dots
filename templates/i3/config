@@ -48,7 +48,7 @@ bindsym $mod+m exec "mpc play $(mpc playlist -f '[%title%]|[%file%]' | awk '{pri
 ###keybinds
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
-bindsym $mod+Shift+b exec firefox -P Amartya
+bindsym $mod+Shift+b exec firefox
 bindsym $mod+Shift+z exec zathura
 bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 50
 bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 50

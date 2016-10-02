@@ -38,4 +38,9 @@ def getBatteryStatus():
         print("")
         print("{{green}}")
 
-getBatteryStatus()
+try:
+    getBatteryStatus()
+except:
+    print("")
+    print("")
+    print("{{green}}")
