@@ -7,10 +7,10 @@ echo "$disk_perc%"
 
 if [ $disk_perc -gt 70 ]
 then
-    echo "#665151"
+    echo "#B28E8E"
 elif [ $disk_perc -gt 50 ]
 then
-    echo "#666614"
+    echo "#B2B28E"
 else
-    echo "#226644"
+    echo "#8EB2A0"
 fi

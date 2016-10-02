@@ -48,3 +48,10 @@ Xft.rgba: rgb
 *.color7:       {{white}}
 *.color15:      {{white}}
 
+!! Rofi Launcher Configs
+rofi.font: {{font_list[0]}} {{font_size}}
+rofi.color-window: {{bg}}, {{red}}, {{red}}
+rofi.width: 100
+rofi.padding: 300
+rofi.opacity: 90
+rofi.color-normal: {{bg}}, {{fg}}, {{bg}}, {{fg}}, {{bg}}

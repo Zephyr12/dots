@@ -1,5 +1,5 @@
 font_list: ["Fira Code", "FontAwesome"]
-background_img: "/home/amartya/Pictures/night_horizon.jpe"
+background_img: "/home/amartya/Pictures/BASE.png"
 font_size: 8
 bar_position: "bottom"
 inner_gap_size: 20

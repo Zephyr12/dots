@@ -8,29 +8,29 @@ style "default"
    GtkPaned::handle_size = 6
    GtkScrollbar::min_slider_length = 30  
 
-   fg[NORMAL]        = "#C8A37B"
+   fg[NORMAL]        = "#F9F9F9"
   # fg[ACTIVE]        = "#00306b"
   # fg[INSENSITIVE]   = "#acacac"
-  fg[PRELIGHT]      = "#C8A37B"
-   fg[SELECTED]      = "#010101"
+  fg[PRELIGHT]      = "#F9F9F9"
+   fg[SELECTED]      = "#334B70"
  
-  bg[NORMAL]       = "#010101"
- bg[ACTIVE]       = "#010101"
+  bg[NORMAL]       = "#334B70"
+ bg[ACTIVE]       = "#334B70"
  #bg[PRELIGHT]     = "#e6e2e6" 
-  bg[SELECTED]     = "#C8A37B"
-  bg[INSENSITIVE]  = "#363666"
+  bg[SELECTED]     = "#F9F9F9"
+  bg[INSENSITIVE]  = "#8E8EB2"
 
  
-  base[SELECTED]  = "#665151"
-  text[SELECTED]  = "#010101"
+  base[SELECTED]  = "#B28E8E"
+  text[SELECTED]  = "#334B70"
  # base[SELECTED]  = { 0.30,0.35,0.65 }
   #text[SELECTED]  = { 1.0, 1.0, 1.0 }
  # base[ACTIVE]    = { 0.6, 0.65, 0.75 }
-  text[ACTIVE]    = "#010101"
+  text[ACTIVE]    = "#334B70"
   
   text[INSENSITIVE]= "#bbb"
-  #text[SELECTED]   = "#010101000"
-  text[ACTIVE]     = "#C8A37B"
+  #text[SELECTED]   = "#334B70000"
+  text[ACTIVE]     = "#F9F9F9"
   
   #font_name = "Trebuchet MS 9"
  
@@ -47,24 +47,24 @@ style "menu"
 {
  #xthickness = 1
   # ythickness = 2
-	  bg[PRELIGHT]    = "#010101"
-  bg[SELECTED]    = "#010101"
+	  bg[PRELIGHT]    = "#334B70"
+  bg[SELECTED]    = "#334B70"
 
-  fg[PRELIGHT]  = "#C8A37B"
-  fg[SELECTED]  = "#C8A37B"
+  fg[PRELIGHT]  = "#F9F9F9"
+  fg[SELECTED]  = "#F9F9F9"
 }
 
 style "range"
 {
-bg[PRELIGHT]     = "#010101"
-bg[ACTIVE]       = "#665151"
+bg[PRELIGHT]     = "#334B70"
+bg[ACTIVE]       = "#B28E8E"
 }
 widget_class "*Menu*" style "menu"
 
 style "b-range"
 {
-bg[PRELIGHT]     = "#010101"
-bg[ACTIVE]       = "#665151"
+bg[PRELIGHT]     = "#334B70"
+bg[ACTIVE]       = "#B28E8E"
 }
 
 class "GtkWidget" style "default"
@@ -75,8 +75,8 @@ class "GtkRange" style "range"
 
 style "rox"
 {
-    bg[NORMAL] = "#010101"
-bg[ACTIVE]       = "#665151"
+    bg[NORMAL] = "#334B70"
+bg[ACTIVE]       = "#B28E8E"
 ##bg_pixmap[NORMAL] = "shadowed.png"
 }
 class "Collection" style "rox"
