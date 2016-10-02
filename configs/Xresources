@@ -47,3 +47,12 @@ Xft.rgba: rgb
 ! white
 *.color7:       #B25452
 *.color15:      #B25452
+
+!! Rofi Launcher Configs
+rofi.font: Fira Code 8
+rofi.color-window: #000001, #000001, #B26868
+rofi.width: 100
+rofi.padding: 300
+rofi.opacity: 90
+rofi.fullscreen: true
+rofi.color-normal: #000001, #FEF8EF, #000001, #FEF8EF, #000001
