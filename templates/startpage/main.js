@@ -11,9 +11,10 @@ bookmarks = [
 	["r/RWBY", "https://www.reddit.com/r/RWBY"],
 	["gmail", "https://www.gmail.com"],
 	["youtube", "https://www.youtube.com/feed/subscriptions"],
-	["uclemail", "https://outlook.office.com/owa/?realm=live.ucl.ac.uk"],
-	["uclmoodle", "https://moodle.ucl.ac.uk/my/"],
-	["ucltimetable", "https://timetable.ucl.ac.uk/tt/homePage.do"]
+	["email", "https://outlook.office.com/owa/?realm=live.ucl.ac.uk"],
+	["moodle", "https://moodle.ucl.ac.uk/my/"],
+        ["portico", "https://ucl.ac.uk/portico"],
+	["timetable", "https://timetable.ucl.ac.uk/tt/homePage.do"]
 ];
 
 function longestCommonSubstring(string1, string2){

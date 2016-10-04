@@ -2,35 +2,35 @@
 # zathurarc-dark
 
 set font                        "Fira Code 8"
-set default-bg                  "#2F4245" #00
-set default-fg                  "#FEFDF7" #01
+set default-bg                  "#000000" #00
+set default-fg                  "#EFEFEF" #01
 
-set statusbar-fg                "#FEFDF7" #04
-set statusbar-bg                "#B2A38E" #01
+set statusbar-fg                "#EFEFEF" #04
+set statusbar-bg                "#662828" #01
 
-set inputbar-bg                 "#2F4245" #00 currently not used
-set inputbar-fg                 "#FEFDF7" #02
+set inputbar-bg                 "#000000" #00 currently not used
+set inputbar-fg                 "#EFEFEF" #02
 
-set notification-error-bg       "#2F4245" #08
-set notification-error-fg       "#B2A38E" #00
+set notification-error-bg       "#000000" #08
+set notification-error-fg       "#662828" #00
 
-set notification-warning-bg     "#2F4245" #08
+set notification-warning-bg     "#000000" #08
 set notification-warning-fg     "#B2B28E" #00
 
-set highlight-color             "#416991" #0A
-set highlight-active-color      "#8EB28E" #0D
+set highlight-color             "#8E92B2" #0A
+set highlight-active-color      "#A2B28E" #0D
 
-set completion-highlight-fg     "#2F4245" #02
-set completion-highlight-bg     "#8EB28E" #0C
+set completion-highlight-fg     "#000000" #02
+set completion-highlight-bg     "#A2B28E" #0C
 
-set completion-bg               "#2F4245" #02
-set completion-fg               "#B2A38E" #0C
+set completion-bg               "#000000" #02
+set completion-fg               "#662828" #0C
 
 set notification-bg             "#B2B28E" #0B
-set notification-fg             "#2F4245" #00
+set notification-fg             "#000000" #00
 
-set recolor-darkcolor 			"#FEFDF7"
-set recolor-lightcolor 			"#2F4245"
+set recolor-darkcolor 			"#EFEFEF"
+set recolor-lightcolor 			"#000000"
 
 set recolor 					"true"
 set recolor-keephue 			"false"

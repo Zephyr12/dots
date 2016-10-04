@@ -12,47 +12,47 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! special
-*.foreground:   #FEFDF7
-*.background:   #2F4245
-*.cursorColor:  #FEFDF7
+*.foreground:   #EFEFEF
+*.background:   #000000
+*.cursorColor:  #EFEFEF
 
 ! black
-*.color0:       #B2A28E
-*.color8:       #B2A28E
+*.color0:       #666666
+*.color8:       #666666
 
 ! red
-*.color1:       #B2A38E
-*.color9:       #B2A38E
+*.color1:       #662828
+*.color9:       #662828
 
 ! green
-*.color2:       #8EB28E
-*.color10:      #8EB28E
+*.color2:       #A2B28E
+*.color10:      #A2B28E
 
 ! yellow
 *.color3:       #B2B28E
 *.color11:      #B2B28E
 
 ! blue
-*.color4:       #416991
-*.color12:      #416991
+*.color4:       #8E92B2
+*.color12:      #8E92B2
 
 ! magenta
-*.color5:       #375675
-*.color13:      #375675
+*.color5:       #B28EB2
+*.color13:      #B28EB2
 
 ! cyan
 *.color6:       #8EB2B2
 *.color14:      #8EB2B2
 
 ! white
-*.color7:       #B2A48E
-*.color15:      #B2A48E
+*.color7:       #B28E8E
+*.color15:      #B28E8E
 
 !! Rofi Launcher Configs
 rofi.font: Fira Code 8
-rofi.color-window: #2F4245, #2F4245, #B2A38E
+rofi.color-window: #000000, #000000, #662828
 rofi.width: 100
 rofi.padding: 300
 rofi.opacity: 90
 rofi.fullscreen: true
-rofi.color-normal: #2F4245, #FEFDF7, #2F4245, #FEFDF7, #2F4245
+rofi.color-normal: #000000, #EFEFEF, #000000, #EFEFEF, #000000

@@ -13,7 +13,6 @@ bookmarks = [
 	["youtube", "https://www.youtube.com/feed/subscriptions"],
 	["uclemail", "https://outlook.office.com/owa/?realm=live.ucl.ac.uk"],
 	["uclmoodle", "https://moodle.ucl.ac.uk/my/"],
-        ["uclportico", "https://ucl.ac.uk/portico"],
 	["ucltimetable", "https://timetable.ucl.ac.uk/tt/homePage.do"]
 ];
 

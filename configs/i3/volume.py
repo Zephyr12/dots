@@ -8,11 +8,11 @@ def getVolumeSettings():
     print(vol_chara + "".join([str(i)+"-" for i in volumePercentages])[:-1])
     print()
     if volumePercentages[0] >= 66:
-        print("#B2A38E")
+        print("#662828")
     elif volumePercentages[0] >= 33:
-        print("#8EB28E")
+        print("#A2B28E")
     elif volumePercentages[0] > 0:
-        print("#FEFDF7")
+        print("#EFEFEF")
     else:
-        print("#FEFDF7")
+        print("#EFEFEF")
 getVolumeSettings()
