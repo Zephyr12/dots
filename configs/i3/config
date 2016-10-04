@@ -30,7 +30,7 @@ floating_modifier $mod
 ### My user tweaks
 
 ###autostarts
-exec_always feh /home/amartya/Pictures/wallpaper.jpe --bg-scale
+exec_always feh /home/amartya/Pictures/BASE.png --bg-scale
 exec mpd
 exec pulseaudio
 exec ~/.i3/music_updater.sh
@@ -215,7 +215,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#exec_always lemonblocks ~/.i3/lemonblocks_scripts/top_bar.yaml | lemonbar -F#FEF8EF -B#000001 -g1200x20+20+20 -d -f"Source Code Pro:size=8" -f"Font Awesome:size=9" | sh
+#exec_always lemonblocks ~/.i3/lemonblocks_scripts/top_bar.yaml | lemonbar -F#FEFDF7 -B#2F4245 -g1200x20+20+20 -d -f"Source Code Pro:size=8" -f"Font Awesome:size=9" | sh
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -224,22 +224,22 @@ bar {
   i3bar_command i3bar -t
   status_command i3blocks -v -c ~/.i3/i3-blocks-status
   strip_workspace_numbers yes
-  position top
+  position bottom
   height $height
   colors {
-    separator #000001
-    background #000001
-    statusline #FEF8EF
-    focused_workspace #000001 #000001 #FEF8EF
-    active_workspace #B26868 #B26868 #000001
-    inactive_workspace #000001 #000001 #B26868
-    urgent_workspace #141466 #141466 #FEF8EF
+    separator #2F4245
+    background #2F4245
+    statusline #FEFDF7
+    focused_workspace #2F4245 #2F4245 #FEFDF7
+    active_workspace #B2A38E #B2A38E #2F4245
+    inactive_workspace #2F4245 #2F4245 #B2A38E
+    urgent_workspace #416991 #416991 #FEFDF7
   }
 }
-client.focused #000001 #B26868 #FEF8EF #000001
-client.focused_inactive #141466 #000001 #FEF8EF #000001
-client.unfocused #000001 #000001 #B26868 #000001
-client.urgent #141466 #141466 #FEF8EF #141466
+client.focused #2F4245 #B2A38E #FEFDF7 #2F4245
+client.focused_inactive #416991 #2F4245 #FEFDF7 #2F4245
+client.unfocused #2F4245 #2F4245 #B2A38E #2F4245
+client.urgent #416991 #416991 #FEFDF7 #416991
 
 exec slock
 exec mpc stop # stops any embarrassing moments with MPD auto starting

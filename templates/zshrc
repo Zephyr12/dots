@@ -8,7 +8,6 @@ alias a="add"
 alias p="push"
 alias c="commit -m"
 alias ch="checkout -b"
-
 alias startc4="sudo systemctl start nginx.service;cd ~/academics/comp-4/src/backend_api"
 
 # Path to your oh-my-zsh installation.

@@ -8,7 +8,7 @@ alias a="add"
 alias p="push"
 alias c="commit -m"
 alias ch="checkout -b"
-alias lecture="vim $(basename $(pwd))-$(date +%d-%m)"
+alias "lecture"="vim $(basename $(pwd))-$(date +%d-%m)"
 
 alias startc4="sudo systemctl start nginx.service;cd ~/academics/comp-4/src/backend_api"
 

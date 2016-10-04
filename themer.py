@@ -12,6 +12,7 @@ import jinja2
 import pdb
 from PIL import Image
 
+
 def clamp_value(col, low, high):
     hsv = list(colorsys.rgb_to_hsv(*col))
     hsv[2] = sorted((low, hsv[2], high))[1]

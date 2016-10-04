@@ -1,10 +1,6 @@
 bookmarks = [
 	["r/aww", "https://www.reddit.com/r/aww"],
-	["phys", "http://www.ocr.org.uk/qualifications/as-a-level-gce-physics-b-advancing-physics-h159-h559/"],
 	["github", "https://github.com/Zephyr12"],
-	["chem", "http://www.ocr.org.uk/qualifications/as-a-level-gce-chemistry-a-h034-h434/"],
-	["math", "http://www.ocr.org.uk/qualifications/as-a-level-gce-mathematics-3890-3892-7890-7892/"],
-	["comp", "http://www.aqa.org.uk/subjects/ict-and-computer-science/as-and-a-level/computing-2510/past-papers-and-mark-schemes"],
 	["r/dnd", "https://www.reddit.com/r/dnd"],
 	["inbox", "https://inbox.google.com"],
 	["ocremix", "https://www.ocremix.org"],
@@ -14,7 +10,10 @@ bookmarks = [
 	["r/talesfromtechsupport", "https://www.reddit.com/r/talesfromtechsupport"],
 	["r/RWBY", "https://www.reddit.com/r/RWBY"],
 	["gmail", "https://www.gmail.com"],
-	["youtube", "https://www.youtube.com/feed/subscriptions"]
+	["youtube", "https://www.youtube.com/feed/subscriptions"],
+	["uclemail", "https://outlook.office.com/owa/?realm=live.ucl.ac.uk"],
+	["uclmoodle", "https://moodle.ucl.ac.uk/my/"],
+	["ucltimetable", "https://timetable.ucl.ac.uk/tt/homePage.do"]
 ];
 
 function longestCommonSubstring(string1, string2){
